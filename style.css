@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.image {
+    height: 400px;
+    width: 250px;
+}
+
+.img1 {
+    height: 400px;
+    width: 250px;
+    border-radius: 10px 0 0 10px;
+}
+.img2 {
+    display: none;
+}
+
+.text {
+    width: 250px;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    padding: 0 15px;
+    font-size: 26px;
+}
+.head {
+    color: hsl(212, 21%, 14%);
+}
+
+h5 {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 6;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+}
+
+.cutprice {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.perfume {
+    letter-spacing: 5px;
+    padding: 0 15px;
+    font-family: 'Fraunces', serif;
+    ;
+}
+
+
+
+
+.btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    background: hsl(158, 36%, 37%);
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    background: #013b07;
+    text-decoration: none;
+}
+
+svg {
+    padding-right: 5px;
+}
+
+
+/* mobile version */
+
+@media only screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+        height: 550px;
+        width: 280px;
+    }
+    .img1 {
+        display: none;       
+    }
+    .img2 {
+        display: block;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+    }
+    .image {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+    }
+}
+
+
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
